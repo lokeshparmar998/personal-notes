@@ -1,0 +1,34 @@
+initial setup
+
+ADB
+1. add adb path to the enviorment variables
+2. write command =>
+2.a. adb devices //copy the device name <device-name>
+2.b. adb -s <device-name> reverse tcp:8081 tcp:8081
+
+Run react-native app
+
+=> to run react-native command in cmd install react-native globally
+* npm install -g react-native-cli 
+* yarn global add react-native-cli
+
+=> to build app and run server
+* react-native run-android
+* react-native run-ios
+
+=> to run the server seperatly
+* react-native start
+
+Baisc errors in react-native
+
+1. Execution failed: app:processDebugResources
+2. Execution failed: transformNativeLibsWithMerge
+solve: root directory of your project run command
+       cd android && gradlew clean
+
+3. Execution failed: app:processDebugGoogleServices
+solve: delete directory <build> at location android/app/
+
+find the build apk file at
+
+android/app/build/output/apk

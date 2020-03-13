@@ -1,0 +1,44 @@
+general commands
+
+links to follow up
+// for tracking
+https://www.git-tower.com/learn/git/faq/track-remote-upstream-branch
+
+
+*git init
+
+*git add . // git add *
+
+*git status
+
+*git commit -m"<message>"
+
+*git push origin <branch-name>
+
+*git pull origin <branch-name>
+
+*git remote add origin <repository-url>
+
+*git log
+
+*git log --oneline
+
+=> create a new branch 
+*git branch <name-of-branch>
+
+=>see all the branchs and origins
+*git branch -a
+
+=>show the changes on the branch || HEAD
+*git branch -v
+
+=>remove all the changes since last commit
+*git reset --hard
+
+=>new local branch tracking a remote branch
+*git switch <branch-name>
+*git switch -c <branch> --track <remote>/<branch-name>
+
+=>pushing a detached head to origin branch
+*git push HEAD:<branch-name>
+
