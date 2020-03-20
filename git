@@ -38,6 +38,8 @@ https://www.git-tower.com/learn/git/faq/track-remote-upstream-branch
 =>new local branch tracking a remote branch
 *git switch <branch-name>
 *git switch -c <branch> --track <remote>/<branch-name>
+or
+git checkout --track origin/dev
 
 =>pushing a detached head to origin branch
 *git push HEAD:<branch-name>
