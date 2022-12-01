@@ -46,3 +46,13 @@ git checkout --track origin/dev
 
 word count: git ls-files | grep "\(.html\|.css\|.js\|.vue\)$" | xargs wc -l
 print graph: git log --all --decorate --oneline --graph
+
+
+=> reset head to a different commit sha-1
+git reset --hard <commit sha-1>
+
+=> cherry pick
+git cherry-pick <commit sha>
+
+=> hard github push
+git push --force
